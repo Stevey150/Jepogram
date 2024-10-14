@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jepogram - Anagram Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Score and Timer Section -->
+        <div class="score-timer-section">
+            <div class="score-section">
+                <h2>Score</h2>
+                <p id="current-score">0</p>
+            </div>
+            <div class="timer-section">
+                <h2>Time Left</h2>
+                <p id="timer">01:00</p>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <h1>Welcome to Jepogram</h1>
+            
+            <div id="game-board">
+                <p>Choose a theme to begin:</p>
+                <select id="theme-select">
+                    <option value="sports">Sports</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="animals">Animals</option>
+                    <option value="countries">Countries</option>
+                </select>
+                <button id="start-game">Start Game</button>
+            </div>
+
+            <div id="scramble-section" class="hidden">
+                <h3>Your scrambled word: <span id="scrambled-word"></span></h3>
+                <input type="text" id="guess" placeholder="Enter your guess">
+                <button id="submit-guess">Submit Guess</button>
+                <p id="message"></p>
+            </div>
+
+            <div id="results-section" class="hidden">
+                <p id="result-message"></p>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container settings */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #4A90E2;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Gameboard styles */
+#game-board p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#theme-select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Scramble section styles */
+#scramble-section {
+    margin-top: 20px;
+}
+
+#scrambled-word {
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #e74c3c;
+}
+
+/* Results section styles */
+#results-section {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#result-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #27ae60;
+}
+
+#play-again {
+    background-color: #2ecc71;
+}
+
+#play-again:hover {
+    background-color: #27ae60;
+}
+
+/* Score and Timer Section */
+.score-timer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.score-section, .timer-section {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.timer-section h2 {
+    color: #e74c3c;
+}
+
+#timer {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e74c3c;
+}
